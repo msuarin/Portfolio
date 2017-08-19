@@ -19,7 +19,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
     <!-- Custom styles for this template -->
-    <link href="css/freelancer.min.css" rel="stylesheet">
+    <link href="css/freelancer.css" rel="stylesheet">
 
   </head>
 
@@ -38,7 +38,7 @@
             <a class="nav-link" href="#portfolio">Skills & Technologies</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#about">Experience</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#contact">Contact</a>
@@ -129,17 +129,79 @@
       </div>
     </section>
 
-    <!-- About Section -->
+    <!-- Experience Section -->
     <section class="success" id="about">
       <div class="container">
-        <h2 class="text-center">About</h2>
+        <h2 class="text-center">Experience</h2>
         <hr class="star-light">
         <div class="row">
-          <div class="col-lg-4 ml-auto">
-            <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
+          <div class="col-lg-6 ml-auto">
+			<h3 class="text-center">Work</h3>
+			<div class="list-group">
+				<a class="list-group-item flex-column align-items-start success">
+					<div class="d-flex w-100 justify-content-between">
+						<h6 class="mb-1">Definitive Logic, San Antonio
+						<small>(February 2016 - Present)</small></h6>
+						
+					</div>
+					<div class="d-flex w-100 justify-content-between">
+						<h6 class="mb-1"><small>.NET Software Developer</small></h6>
+					</div>
+					<p class="mb-1">
+						<ul>
+							<li>Created Sharepoint web applications according to the customer's specifications using ASPX pages and ASP.NET user controls with an SQL backend.</li>
+							<li>Fixed bugs and tested the fixes to satisfy change requests.</li>
+							<li>Wrote unit tests to ensure our code's integrity and prevent any customer complaints.</li>
+							<li>Created an automated test framework using Selenium and Specflow to test our web application.</li>
+						</ul>
+					</p>
+				</a>
+				<a class="list-group-item flex-column align-items-start success">
+					<div class="d-flex w-100 justify-content-between">
+						<h6 class="mb-1">Sunview Software, Tampa
+						<small>(September 2012 - June 2015)</small></h6>
+						
+					</div>
+					<div class="d-flex w-100 justify-content-between">
+						<h6 class="mb-1"><small>Quality Assurance Tester</small></h6>
+					</div>
+					<p class="mb-1">
+						<ul>
+							<li>Created and maintained an automated application that upgrades our
+								software on a VM. This application checks for new versions, copies
+								over the installer, runs the installer, resets the IIS server, runs our
+								automated selenium tests and sends results as an email attachment on a daily basis. This saved our test team a lot of time by pre-emptively testing the UI on new builds in the wee hours of the morning.</li>
+							<li>Created and maintained a set of Selenium webdriver automated
+								tests. These tests include interacting with a web UI’s forms, text boxes,
+								dropdown boxes, menus etc.</li>
+							<li>Performed manual tests that includes regression, feature testing, and
+							fix verification tests. This includes coordinating with the developers if the feature or bug fix is not working or is not according to the specifications.</li>
+						</ul>
+					</p>
+				</a>
+			</div>
           </div>
-          <div class="col-lg-4 mr-auto">
-            <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
+          <div class="col-lg-6 mr-auto">
+			<h3 class="text-center">School</h3>
+            <div class="list-group">
+				<a class="list-group-item flex-column align-items-start success">
+					<div class="d-flex w-100 justify-content-between">
+						<h6 class="mb-1">University of South Florida, Tampa
+						<small>(September 2012)</small></h6>
+						
+					</div>
+					<div class="d-flex w-100 justify-content-between">
+						<h6 class="mb-1"><small>Computer Science</small></h6>
+					</div>
+					<p class="mb-1">
+						<ul>
+							<li>Created different projects which involved using languages like C#, C++, C, and Java. These include .NET windows forms 
+							and ASP.NET Forms projects with an SQL backend.</li>
+							<li>Coursework includes: Algorithms and Data Structures, Operating Systems, Logic Design, Computer Architecture, Software Testing etc.</li>
+						</ul>
+					</p>
+				</a>
+			</div>
           </div>
           <div class="col-lg-8 mx-auto text-center">
             <a href="#" class="btn btn-lg btn-outline">
@@ -207,8 +269,8 @@
           <div class="row">
             <div class="footer-col col-md-4">
               <h3>Location</h3>
-              <p>3481 Melrose Place
-                <br>Beverly Hills, CA 90210</p>
+              <p>San Antonio, Texas
+                </p>
             </div>
             <div class="footer-col col-md-4">
               <h3>Around the Web</h3>
@@ -546,6 +608,17 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/freelancer.min.js"></script>
+	
+	<script>
+		$(function () {
+			$('[data-toggle="popover"]').popover({
+			trigger: 'focus'
+			});
+		})
+		$('a.list-group-item').click(function(e) {
+			e.preventDefault();
+		});
+	</script>
 
   </body>
 
