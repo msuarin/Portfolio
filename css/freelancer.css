@@ -203,7 +203,8 @@ header.masthead {
     display: block;
     max-width: 400px;
     margin: 0 auto;
-    cursor: pointer; }
+    cursor: pointer; 
+	text-align: center;}
     #portfolio .portfolio-item .portfolio-link .caption {
       position: absolute;
       width: 100%;
@@ -229,7 +230,9 @@ header.masthead {
         #portfolio .portfolio-item .portfolio-link .caption .caption-content h3,
         #portfolio .portfolio-item .portfolio-link .caption .caption-content h4 {
           margin: 0; }
-
+		  i {
+			  font-size: 11em;
+		  }
 #portfolio * {
   z-index: 2; }
 
