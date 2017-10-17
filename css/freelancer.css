@@ -265,6 +265,11 @@ font-size: 11em;}
     .portfolio-modal .modal-dialog .modal-content .item-details {
       margin: 30px 0; }
 
+ul#concepts{
+	margin:auto;
+	text-align: left;
+	width: 80%
+}	  
 .portfolio-modal .close-modal {
   position: absolute;
   top: 25px;
