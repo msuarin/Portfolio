@@ -376,6 +376,10 @@ footer {
     color: #18BC9C;
     border: solid 2px white;
     background: white; }
+	
+.btn-social.btn-outline{
+	margin-top: 0px;
+}
 
 .btn-primary {
   font-weight: 700;
@@ -462,6 +466,12 @@ footer {
   text-align: center;
   border: 2px solid white;
   border-radius: 100%; }
+  
+a.btn-social i {
+   margin-top: 12px;
+   /*vertical-align: middle; */
+   /* display: inline-block; */
+}
 
 .btn.active,
 .btn:active,
